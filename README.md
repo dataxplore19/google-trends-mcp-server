@@ -9,7 +9,7 @@ Ask your assistant things like:
 - "What is trending on Google in the UK today?"
 - "Compare the seasonality of 'sunscreen' over the last 5 years and tell me when to launch a campaign."
 
-The data comes from the [Google Trends Scraper](https://apify.com/data_xplorer/google-trends-fast-scraper) Actor on Apify, which handles Google's rate limits, so your assistant never hits the HTTP 429 errors of unofficial libraries like pytrends.
+The data comes from the [Google Trends Scraper](https://apify.com/data_xplorer/google-trends-fast-scraper?fpr=6vi1cs) Actor on Apify, which handles Google's rate limits, so your assistant never hits the HTTP 429 errors of unofficial libraries like pytrends.
 
 > Click **Watch > Custom > Releases** at the top of this page to be notified of new features.
 
@@ -28,7 +28,7 @@ The data comes from the [Google Trends Scraper](https://apify.com/data_xplorer/g
 
 ## Setup
 
-You need Node.js 18 or later and an Apify API token: create a free [Apify](https://apify.com) account, then copy your token from [Settings > API & Integrations](https://console.apify.com/settings/integrations).
+You need Node.js 18 or later and an Apify API token: create a free [Apify](https://apify.com?fpr=6vi1cs) account, then copy your token from [Settings > API & Integrations](https://console.apify.com/settings/integrations).
 
 ### Claude Desktop
 
@@ -111,7 +111,7 @@ Command `npx -y google-trends-mcp-server`, transport stdio, environment variable
 - Python script: [google-trends-api-python](https://github.com/dataxplore19/google-trends-api-python)
 - Node.js script: [google-trends-api-node](https://github.com/dataxplore19/google-trends-api-node)
 - No code, in n8n: [n8n workflow templates](https://github.com/dataxplore19/n8n-google-trends-news-templates)
-- Directly on Apify: [Google Trends Scraper](https://apify.com/data_xplorer/google-trends-fast-scraper)
+- Directly on Apify: [Google Trends Scraper](https://apify.com/data_xplorer/google-trends-fast-scraper?fpr=6vi1cs)
 
 ## FAQ
 
@@ -129,7 +129,7 @@ It works with any client that supports MCP servers over stdio. For clients that 
 
 ## Disclosure
 
-I am the author of the Google Trends Scraper Actor used by this server.
+I am the author of the Google Trends Scraper Actor used by this server. Links to apify.com in this repository are referral links: if you create an Apify account through them, I may earn a commission at no cost to you.
 
 ## License
 
