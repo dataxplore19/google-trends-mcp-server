@@ -1,0 +1,21 @@
+{
+  "name": "google-trends-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Google Trends: interest over time, interest by region and trending searches for Claude, Cursor and other AI assistants.",
+  "mcpName": "io.github.dataxplore19/google-trends-mcp-server",
+  "type": "module",
+  "main": "index.js",
+  "bin": { "google-trends-mcp-server": "index.js" },
+  "files": ["index.js", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "google-trends", "trends", "trending-searches", "seo", "claude", "cursor", "ai-agent", "apify"],
+  "repository": { "type": "git", "url": "git+https://github.com/dataxplore19/google-trends-mcp-server.git" },
+  "homepage": "https://github.com/dataxplore19/google-trends-mcp-server#readme",
+  "author": "dataxplore19",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "apify-client": "^2.26.0",
+    "zod": "^4.6.7"
+  }
+}
