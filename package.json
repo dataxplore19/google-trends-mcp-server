@@ -1,6 +1,6 @@
 {
   "name": "google-trends-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Google Trends: interest over time, interest by region and trending searches for Claude, Cursor and other AI assistants.",
   "mcpName": "io.github.dataxplore19/google-trends-mcp-server",
   "type": "module",

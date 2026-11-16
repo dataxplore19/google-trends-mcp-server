@@ -27,7 +27,7 @@ async function runActor(input) {
 const reply = (data) => ({ content: [{ type: 'text', text: JSON.stringify(data, null, 1) }] });
 const fail = (err) => ({ isError: true, content: [{ type: 'text', text: `Error: ${err.message}` }] });
 
-const server = new McpServer({ name: 'google-trends', version: '1.0.0' });
+const server = new McpServer({ name: 'google-trends', version: '1.0.1' });
 
 server.registerTool('get_interest_over_time', {
     title: 'Google Trends: interest over time',
@@ -47,6 +47,10 @@ server.registerTool('get_interest_over_time', {
             mode: 'keyword', keyword, geo, predefinedTimeframe: timeframe, fetchRegionalData: include_regions,
         });
         if (!item) return reply({ keyword, message: 'No data returned' });
+        if (item.error) {
+            // e.g. not enough Google searches for this keyword, period and country
+            return reply({ keyword, geo: geo || 'worldwide', timeframe, error: item.error });
+        }
         const series = Object.entries(item.timeline_data?.[keyword] ?? {});
         const peak = series.reduce((a, b) => (b[1] > a[1] ? b : a), ['', -1]);
         return reply({

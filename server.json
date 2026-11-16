@@ -8,13 +8,13 @@
     "source": "github"
   },
   "websiteUrl": "https://apify.com/data_xplorer/google-trends-fast-scraper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "google-trends-mcp-server",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       },
